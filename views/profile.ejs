@@ -1,0 +1,269 @@
+
+    <body class="bg-gray-900">
+        <div class="fixed z-30 hidden h-screen col-span-4 -ml-32 overflow-y-auto bg-gray-800 border-t shadow-2xl mt-14 sm:mt-0 md:block " id="sideMenu">
+            <div class="py-20 mt-">
+                <ul class="justify-center -mt-16 space-y-4 text-lg space-x-">
+                    <li class="h-12 ml-20 text-lg text-red-400 border-b px-14 md:flex hover:text-white">
+                        <a class="flex transition duration-500 ease-in-out select-none hover:text-white" href="/">
+                            &nbsp; RozzayCrypto™
+                        </a>
+                    </li>
+                    <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                        <a class="flex transition duration-500 ease-in-out select-none hover:text-white" href="/dashboard">
+                            <span class="h-10 text-2xl text-center duration-700 transform ">
+                                <img src="/static/img/dash_icons/dashboard_50px.png " alt="" class="h-6">
+                            </span>
+                            &nbsp; Dashboard
+                        </a>
+                    </li>
+                    <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                        <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/deposit">
+                            <span class="h-10 text-2xl text-center duration-700 transform ">
+                                <img src="/static/img/dash_icons/add_new_50px.png " alt="" class="h-6">
+                            </span>
+                            &nbsp;Deposit
+                        </a>
+                    </li>
+                    <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                        <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/verify ">
+                            <span class="h-10 text-2xl text-center duration-700 transform ">
+                                <img src="/static/img/dash_icons/upload_document_50px_2.png " alt="" class="h-6">
+                            </span>
+                            &nbsp; Verification
+                        </a>
+                    </li>
+                    <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                        <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/withdraw ">
+                            <span class="h-10 text-2xl text-center duration-700 transform ">
+                                <img src="/static/img/dash_icons/bank_building_50px_2.png " alt="" class="h-6">
+                            </span>
+                            &nbsp;Withdraw&nbsp&nbsp;Funds
+                        </a>
+                    </li>
+                    <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                        <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/notification ">
+                            <span class="h-10 text-2xl text-center duration-700 transform ">
+                                <img src="/static/img/dash_icons/notification_50px.png " alt="" class="h-6">
+                            </span>
+                            &nbsp;Notifications
+                        </a>
+                    </li>
+                    <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                        <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/transacts">
+                            <span class="h-10 text-2xl text-center duration-700 transform ">
+                                <img src="/static/img/dash_icons/ledger_50px.png " alt="" class="h-6">
+                            </span>
+                            &nbsp;Transaction&nbsp;history
+                        </a>
+                    </li>
+                    <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                        <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/pending_withdraw">
+                            <span class="h-10 text-2xl text-center duration-700 transform ">
+                                <img src="/static/img/dash_icons/icons8_expired_50px.png " alt="" class="w-10">
+                            </span>
+                            &nbsp;Pending&nbsp;withdrawals
+                        </a>
+                    </li>
+                    <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                        <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/pending_deposit">
+                            <span class="h-10 text-2xl text-center duration-700 transform ">
+                                <img src="/static/img/dash_icons/payment_history_50px.png " alt="" class="h-6">
+                            </span>
+                            &nbsp;Pending&nbsp;deposits
+                        </a>
+                    </li>
+                    <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                        <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/profile">
+                            <span class="h-10 text-2xl text-center duration-700 transform ">
+                                <img src="/static/img/dash_icons/profile_50px.png " alt="" class="h-6">
+                            </span>
+                            &nbsp; Profile
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+    
+        <!-- sidebar ends -->
+        <div class="md:ml-60 ">
+            <!-- topnav -->
+            
+    
+    <div class="fixed z-30 flex items-center w-full h-16 gap-20 -mt-2 bg-gray-800 shadow-2xl justify-between md:justify-center md:gap-3">
+        <div class="px-4 cursor-pointer md:hidden" id="ham">
+            <img src="/static/img/dash_icons/icons8_menu_50px.png " alt="hamburger" class="h-8">
+        </div>
+        <div class="ml-60   ">
+            <nav class="shadow-lg ">
+                <ul class="flex gap-4 text-white text-md ">
+                    <li>logout </li>
+                    <li class="flex gap-3 " >
+                        <a href="/logout/">
+                            <img src="/static/img/dash_icons/shutdown_50px_1.png  " alt="" class="h-6 ">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+            <!-- / .topnav -->
+        
+            <div class="-mt-8 md:mr-20">
+                <div class="grid-cols-12 px-5 py-10 mt-10 md:p-3 sm:px-10" id="main_content">
+                    <div class="lg:px-20">
+                        <div class="gap-2 py-2 pb-4 mt-10 text-lg text-white md:text-2xl md:mt-16 text-semibold">
+                            <div class="flex items-center gap-2 pb-10">
+                                <img src="/static/img/dash_icons/profile_50px.png " alt="" class="h-6"> 
+                                User's Profile
+                            </div>
+                        </div>
+                        <div class="grid-cols-12 py-3 mx-auto bg-gray-800 border-t border-green-400 rounded-lg">
+                            
+                                <div class="col-span-3 py-4 border-b px-">
+                                    <div class="flex justify-between grid-cols-6 px-5 text-white lg:px-32">
+                                        <div class="col-span-3">
+                                            Username
+                                        </div>
+                                        <div class="col-span-3">
+                                            <%= req.user.username %>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-3 py-4 border-b px-">
+                                    <div class="flex justify-between grid-cols-6 px-5 text-white px- lg:px-32">
+                                        <div class="col-span-3">
+                                            Firstname
+                                        </div>
+                                        
+                                        <div class="col-span-3">
+                                            <%= req.user.firstname %>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-span-3 py-4 border-b px-">
+                                    <div class="flex justify-between grid-cols-6 px-5 text-white px- lg:px-32">
+                                        <div class="col-span-3">
+                                            Lastname
+                                        </div>
+                                        <div class="col-span-3">
+                                            <%= req.user.lastname %>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-3 py-4 border-b px-">
+                                    <div class="flex justify-between grid-cols-6 px-5 text-white px- lg:px-32">
+                                        <div class="col-span-3">
+                                            Email
+                                        </div>
+                                        <div class="col-span-3 text-">
+                                            <%= req.user.email %>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-3 py-4 border-b px-">
+                                    <div class="flex justify-between grid-cols-6 px-5 text-white px- lg:px-32">
+                                        <div class="col-span-3">
+                                            Phone Number
+                                        </div>
+                                        <div class="col-span-3">
+                                            <%= req.user.phone %>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-3 py-4 border-b px-">
+                                    <div class="flex justify-between grid-cols-6 px-5 text-white px- lg:px-32">
+                                        <div class="col-span-3">
+                                            Account Status
+                                        </div>
+                                        <div class="col-span-3">
+                                            Active
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-3 py-4 px- border-b">
+                                    <div class="flex justify-between grid-cols-6 px-5 text-white lg:px-32">
+                                        <div class="col-span-3">
+                                            Country
+                                        </div>
+                                        <div class="col-span-3">
+                                            <%= req.user.country %>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-3 py-4 px- ">
+                                    <div class="flex justify-between grid-cols-6 px-5 text-white lg:px-32">
+                                        <div class="col-span-3">
+                                            Joined
+                                        </div>
+                                        <div class="col-span-3">
+                                            <%= new Date( req.user.regDate).toDateString() %>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script>
+            document.getElementById("copyButton").addEventListener("click", function() {
+              copyToClipboard(document.getElementById("copyTarget"));
+            });
+        
+            function copyToClipboard(elem) {
+              // create hidden text element, if it doesn't already exist
+            var targetId = "_hiddenCopyText_";
+            var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+            var origSelectionStart, origSelectionEnd;
+            if (isInput) {
+                // can just use the original source element for the selection and copy
+                target = elem;
+                origSelectionStart = elem.selectionStart;
+                origSelectionEnd = elem.selectionEnd;
+            } else {
+                // must use a temporary form element for the selection and copy
+                target = document.getElementById(targetId);
+                if (!target) {
+                  var target = document.createElement("textarea");
+                  target.style.position = "absolute";
+                  target.style.left = "-9999px";
+                  target.style.top = "0";
+                  target.id = targetId;
+                  document.body.appendChild(target);
+                }
+                target.textContent = elem.textContent;
+            }
+            // select the content
+            var currentFocus = document.activeElement;
+            target.focus();
+            target.setSelectionRange(0, target.value.length);
+        
+            // copy the selection
+            var succeed;
+            try {
+                  succeed = document.execCommand("copy");
+            } catch(e) {
+                succeed = false;
+            }
+            // restore original focus
+            if (currentFocus && typeof currentFocus.focus === "function") {
+                currentFocus.focus();
+            }
+        
+            if (isInput) {
+                // restore prior selection
+                elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+            } else {
+                // clear temporary content
+                target.textContent = "";
+            }
+            return succeed;
+          }
+        </script>
+    </body>

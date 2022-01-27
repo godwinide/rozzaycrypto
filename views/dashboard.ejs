@@ -1,0 +1,502 @@
+        <link rel="stylesheet" href="/static/styles.css ">
+        <!-- sidebar -->
+    <div class="fixed z-30 hidden h-screen col-span-4 -ml-32 overflow-y-auto bg-gray-800 border-t shadow-2xl mt-14 sm:mt-0 md:block " id="sideMenu">
+        <div class="py-20 mt-">
+            <ul class="justify-center -mt-16 space-y-4 text-lg space-x-">
+                <li class="h-12 ml-20 text-lg text-red-400 border-b px-14 md:flex hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white" href="/">
+                        &nbsp; RozzayCrypto™
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white" href="/dashboard">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/dashboard_50px.png " alt="" class="h-6">
+                        </span>
+                        &nbsp; Dashboard
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/deposit">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/add_new_50px.png " alt="" class="h-6">
+                        </span>
+                        &nbsp;Deposit
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/verify ">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/upload_document_50px_2.png " alt="" class="h-6">
+                        </span>
+                        &nbsp; Verification
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/withdraw ">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/bank_building_50px_2.png " alt="" class="h-6">
+                        </span>
+                        &nbsp;Withdraw&nbsp&nbsp;Funds
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/notification ">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/notification_50px.png " alt="" class="h-6">
+                        </span>
+                        &nbsp;Notifications
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/transacts">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/ledger_50px.png " alt="" class="h-6">
+                        </span>
+                        &nbsp;Transaction&nbsp;history
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/pending_withdraw">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/icons8_expired_50px.png " alt="" class="w-10">
+                        </span>
+                        &nbsp;Pending&nbsp;withdrawals
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/pending_deposit">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/payment_history_50px.png " alt="" class="h-6">
+                        </span>
+                        &nbsp;Pending&nbsp;deposits
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/profile">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/profile_50px.png " alt="" class="h-6">
+                        </span>
+                        &nbsp; Profile
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <!-- sidebar ends -->
+    <div class="mr-2 md:ml-60 ">
+        <!-- topnav -->
+        
+
+<div class="fixed z-30 flex items-center w-full h-16 gap-20 -mt-2 bg-gray-800 shadow-2xl justify-between md:justify-center md:gap-3">
+    <div class="px-4 cursor-pointer md:hidden" id="ham">
+        <img src="/static/img/dash_icons/icons8_menu_50px.png " alt="hamburger" class="h-8">
+    </div>
+    <div class="ml-60   ">
+        <nav class="shadow-lg ">
+            <ul class="flex gap-4 text-white text-md ">
+                <li>logout </li>
+                <li class="flex gap-3 " >
+                    <a href="/logout/">
+                        <img src="/static/img/dash_icons/shutdown_50px_1.png  " alt="" class="h-6 ">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+        <!-- / .topnav -->
+        <div class="flex grid-cols-12 gap-2 mt-2">
+            <!-- main content -->
+            <div class="col-span-8 p-3 mt-10 bg-gray-900" id="main_content">
+                <div class="md:mr md:m">
+                    <div class="px-5 py-5 text-lg text-white md:text-2xl">
+                        Dashboard
+                    </div>
+                    <div class="text-sm bg-gray-400 bg-green-500 border border-transparent rounded-lg shadow-xl px- md:py-2 md:text-md">
+                        <span class="flex justify-end p-2 px-5 text-lg md:justify-end ">
+                            <span class="p-1 text-white bg-gray-800 rounded-full shadow-lg">
+                                <a href="/profile" class="outline-none">
+                                    <%= req.user.username%>
+                                </a>
+                            </span>
+                        </span>
+                    </div>
+                    <!-- panel_tabs -->
+                    
+<div class="grid gap-5 p-1 mt-10 lg:grid-cols-6 md:grid-cols-6 xl:grid-cols-12">
+    <div class="col-span-1 text-gray-200 transform bg-gray-800 rounded-lg select-none p- lg:col-span-3 sm:col-span-3 hover:scale-y-105 hover:shadow-2xl">
+        <div class="flex items-center gap-20 px-4 py-5 md:justify- mr-">
+            <div class="p- sm:mx-0">
+                <img src="/static/img/dash_icons/icons8_wallet_80px.png " class="h-12 px-1 py-1 bg-green-300 rounded-full">
+            </div>
+            <div class="mx-auto ml-3">
+                <div class="text-sm ">
+                    Invested Capital
+                </div>
+                <div class="text-lg ">
+                    
+                        <b class="text-gray-300">$</b><%= commaFunc(req.user.capital) %>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-span-1 text-gray-200 transform bg-gray-800 rounded-lg select-none p- lg:col-span-3 sm:col-span-3 hover:scale-y-105 hover:shadow-2xl">
+        <div class="flex items-center gap-20 px-4 py-5 md:justify-">
+            <div class="py-2 sm:mx-0 ">
+                <img src="/static/img/dash_icons/icons8_receipt_80px.png " class="h-12 bg-green-300 rounded-full">
+            </div>
+            <div class="mx-auto ml-3">
+                <div class="text-sm ">
+                    Investment Profit
+                </div>
+                <div class="text-lg">
+                    
+                        <b class="text-gray-300">$</b><%= commaFunc(req.user.profit) %>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-span-1 text-gray-200 transform bg-gray-800 rounded-lg select-none p- lg:col-span-3 sm:col-span-3 hover:scale-y-105 hover:shadow-2xl">
+        <div class="flex items-center gap-20 px-4 py-5 md:justify- mr-">
+            <div class="py-2 sm:mx-0">
+                <img src="/static/img/dash_icons/icons8_check_80px.png " class="h-12 bg-green-300 rounded-full">
+            </div>
+            <div class="mx-auto ml-3">
+                <div class="text-sm ">
+                    Avaliable balance 
+                </div>
+                <div class="text-lg">
+                    
+                        <b class="text-gray-300">$</b><%= commaFunc(req.user.balance) %>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-span-1 text-gray-200 transform bg-gray-800 rounded-lg select-none p- lg:col-span-3 sm:col-span-3 hover:scale-y-105 hover:shadow-2xl">
+        <div class="flex items-center gap-20 px-4 py-5 md:justify- mr-">
+            <div class="py-2 sm:mx-0">
+                <img src="/static/img/dash_icons/icons8_hashtag_activity_feed_80px_2.png " class="h-12 bg-yellow-400 rounded-full">
+            </div>
+            <div class="mx-auto ml-3">
+                <div class="text-sm ">
+                    Account status
+                </div>
+                <div class="text-lg text-blue-500">
+                    
+                        Active
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--***********-->
+<div class="grid gap-5 p-1 mt-4 lg:grid-cols-6 md:grid-cols-6 xl:grid-cols-12">
+    <div class="col-span-1 text-gray-200 transform bg-gray-800 rounded-lg select-none p- lg:col-span-3 sm:col-span-3 hover:scale-y-105 hover:shadow-2xl">
+        <div class="flex items-center gap-20 px-4 py-5 md:justify- mr-">
+            <div class="py-2 sm:mx-0">
+                <img src="/static/img/dash_icons/icons8_growing_money_80px.png " class="h-12 bg-green-500 rounded-full">
+            </div>
+            <div class="mx-auto ml-3">
+                <div class="text-sm ">
+                    Current_plan
+                </div>
+                <div class="text-lg uppercase">
+                    
+                    <%= req.user.account_plan %>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="col-span-1 text-gray-200 transform bg-gray-800 rounded-lg select-none p- lg:col-span-3 sm:col-span-3 hover:scale-y-105 hover:shadow-2xl">-->
+    <!--    <div class="flex items-center gap-20 px-4 py-5 md:justify- mr-">-->
+    <!--        <div class="py-2 sm:mx-0">-->
+    <!--            <img src="/static/img/dash_icons/icons8_receive_cash_80px.png " class="h-12 bg-red-500 rounded-full">-->
+    <!--        </div>-->
+    <!--        <div class="mx-auto ml-3">-->
+    <!--            <div class="text-sm ">-->
+    <!--                Withdrawal_History-->
+    <!--            </div>-->
+    <!--            <div class="flex mt-3 text--600 md:block gap-">-->
+    <!--                <div class="text-xs text-blue-500">-->
+    <!--                <a href="/pending_withdraw">-->
+    <!--                    Comfirmed ~0-->
+    <!--                </a>-->
+    <!--                </div>-->
+    <!--                <div class="text-xs text-yellow-500">-->
+    <!--                <a href="/pending_withdraw">-->
+    <!--                    Pending ~0-->
+    <!--                </a>-->
+    <!--                </div>-->
+    <!--                <div class="text-xs text-red-500">-->
+    <!--                <a href="/pending_withdraw">-->
+    <!--                    Rejected ~0-->
+    <!--                </a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--<div class="col-span-1 text-gray-200 transform bg-gray-800 rounded-lg select-none p- lg:col-span-3 sm:col-span-3 hover:scale-y-105 hover:shadow-2xl">-->
+    <!--    <div class="flex items-center gap-20 px-3 py-5 md:justify- mr-">-->
+    <!--        <div class="py-2 sm:mx-0">-->
+    <!--            <img src="/static/img/dash_icons/icons8_data_pending_80px.png " class="h-12 bg-red-500 rounded-full shadow-lg">-->
+    <!--        </div>-->
+    <!--        <div class="mx-auto ml-3">-->
+    <!--            <div class="text-sm ">-->
+    <!--                Deposit History-->
+    <!--            </div>-->
+    <!--            <div class="flex mt-3 text-yellow-600 md:block gap-">-->
+    <!--                <div class="text-xs text-blue-500">-->
+    <!--                <a href="/pending_deposit">-->
+    <!--                    Comfirmed ~0-->
+    <!--                </a>-->
+    <!--                </div>-->
+    <!--                <div class="text-xs text-yellow-500">-->
+    <!--                <a href="/pending_deposit">-->
+    <!--                    Pending ~0-->
+    <!--                </a>-->
+    <!--                </div>-->
+    <!--                <div class="text-xs text-red-500">-->
+    <!--                <a href="/pending_deposit">-->
+    <!--                    Rejected ~0-->
+    <!--                </a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--<div class="col-span-1 text-gray-200 transform bg-gray-800 rounded-lg select-none p- lg:col-span-3 sm:col-span-3 hover:scale-y-105 hover:shadow-2xl">-->
+    <!--    <div class="flex items-center gap-20 px-4 py-5 md:justify- mr-">-->
+    <!--        <div class="py-2 sm:mx-0">-->
+    <!--            <img src="/static/img/dash_icons/icons8_secure_80px_1.png " alt="" class="h-12 bg-red-300 rounded-full">-->
+    <!--        </div>-->
+    <!--        <div class="mx-auto ml-3">-->
+    <!--            <div class="text-sm ">-->
+    <!--                User ID-->
+    <!--            </div>-->
+    <!--            <div class="text-lg">-->
+    <!--                032100228-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+</div>
+<!--****-->
+</div>
+
+
+                    <!-- / .panel_tabs -->
+                    
+                    <!-- plans -->
+                    
+
+<div class="mt-10">
+    <div class="px-5 text-lg text-white capitalize md:text-2xl">
+        investment plans
+    </div>
+    <div class="grid gap-4 px-5 mt-3 md:grid-cols-6 sm:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12">
+        <div class="col-span-3 mt-3 bg-green-600 rounded-md shadow-lg select-none md:col-span-6 lg:col-span-6 sm:col-span-6 sm:bg-red-400 md:bg-green-500 lg:bg-500-red-500 xl:bg-green-400 xl:col-span-3">
+            <div class="col-span-3 p-4 mt-3 bg-gray-800 rounded-sm">
+                <div class="py-2 sm:mx-0 shadow-2xl">
+                    <img src="/static/img/dash_icons/icons8_growing_money_80px.png " class="h-12 bg-green-500 rounded-full shadow-2xl cursor-pointer">
+                </div>
+                <div class="pb-4 text-2xl text-center text-white capitalize md:text-3xl">
+                    Basic
+                </div>
+                <div class="text-2xl text-center text-gray-50">$100 +</div>
+                <div class="text-gray-50 text-center">For investors that want to investment small.</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> Best Traders support</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> minimal roll out of Investment</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> limited brokery service</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> 8/5 days support</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> Frequent updates </div>
+            </div>
+            <a href="/deposit">
+                <div class="bg-green-600 rounded-b py-2 text-center text-bold text-2xl hover:shadow-lg hover-text-white">
+                    Get Plan
+                </div>
+            </a>
+        </div>
+        <div class="col-span-3 mt-3 bg-green-600 rounded-md shadow-2xl select-none md:col-span-6 lg:col-span-6 sm:col-span-6 sm:bg-red-400 md:bg-green-500 lg:bg-500-red-500 xl:bg-green-400 xl:col-span-3">
+            <div class="col-span-3 p-4 mt-3 bg-gray-800 rounded-sm shadow-md ">
+                <div class="py-2 sm:mx-0 shadow-2xl">
+                    <img src="/static/img/dash_icons/icons8_growing_money_80px.png " class="h-12 bg-green-500 rounded-full shadow-2xl cursor-pointer">
+                </div>
+                <div class="pb-4 text-2xl text-center text-white capitalize md:text-3xl">
+                    Standard
+                </div>
+                <div class="text-2xl text-center text-gray-50">$200 +</div>
+                <div class="text-gray-50 text-center">For investors that want minimal returns.</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> top Traders support</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> maxmimal roll out of Investment</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> Unlimited brokery service</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> 24/5 days support</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> Frequent updates </div>
+            </div>
+            <a href="/deposit">
+                <div class="bg-green-600 rounded-b py-2 text-center text-bold text-2xl hover:shadow-lg hover-text-white">
+                    Get Plan
+                </div>
+            </a>
+        </div>
+        <div class="col-span-3 mt-3 bg-green-600 rounded-md shadow-2xl select-none md:col-span-6 lg:col-span-6 sm:col-span-6 sm:bg-red-400 md:bg-green-500 lg:bg-500-red-500 xl:bg-green-400 xl:col-span-3">
+            <div class="col-span-3 p-4 mt-3 bg-gray-800 rounded-sm">
+                <div class="py-2 sm:mx-0 shadow-2xl">
+                    <img src="/static/img/dash_icons/icons8_growing_money_80px.png " class="h-12 bg-green-500 rounded-full shadow-2xl cursor-pointer">
+                </div>
+                <div class="pb-4 text-2xl text-center text-white capitalize md:text-3xl">
+                    Premium
+                </div>
+                <div class="text-2xl text-center text-gray-50">$500 +</div>
+                <div class="text-gray-50 text-center">For investors that want to investment small.</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> expert Traders support</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> Top roll out of Investment</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> Unlimited brokery service</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> 24/7 support</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> Frequent updates </div>
+            </div>
+            <a href="/deposit">
+                <div class="bg-green-600 rounded-b py-2 text-center text-bold text-2xl hover:shadow-lg hover-text-white">
+                    Get Plan
+                </div>
+            </a>
+        </div>
+        <div class="col-span-3 mt-3 bg-green-600 rounded-md shadow-2xl select-none md:col-span-6 lg:col-span-6 sm:col-span-6 sm:bg-red-400 md:bg-green-500 lg:bg-500-red-500 xl:bg-green-400 xl:col-span-3">
+            <div class="col-span-3 p-4 mt-3 bg-gray-800 rounded-sm">
+                <div class="py-2 sm:mx-0 shadow-2xl">
+                    <img src="/static/img/dash_icons/icons8_growing_money_80px.png " class="h-12 bg-green-500 rounded-full shadow-2xl cursor-pointer">
+                </div>
+                <div class="pb-4 text-2xl text-center text-white capitalize md:text-3xl">
+                    Diamond
+                </div>
+                <div class="text-2xl text-center text-gray-50">$1000 +</div>
+                <div class="text-gray-50 text-center">For investors that wants to yield high investment returns.</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> Experienced Traders support</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> Highest Level roll out of Investment </div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> Unlimited brokery service</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> 24/7 support</div>
+                <div class="mt-3 text-lg text-center text-gray-50"><span class="text-red-500">*</span> Frequent updates </div>
+            </div>
+            <a href="/deposit">
+                <div class="bg-green-600 rounded-b py-2 text-center text-bold text-2xl hover:shadow-lg hover-text-white">
+                    Get Plan
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+                    <!-- / .plans -->
+                    <div class="px-5 mt-12 text-2xl text-white -pb-5">
+                        live market chart
+                    </div>                    
+                    <div class="md:grid-cols-12 md:flex mt-5 gap-5 px-10">
+    <div class="md:col-span-6">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/indices/" rel="noopener" target="_blank"><span class="blue-text">Indices</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+        {
+        "colorTheme": "dark",
+        "dateRange": "12M",
+        "showChart": true,
+        "locale": "en",
+        "largeChartUrl": "",
+        "isTransparent": false,
+        "showSymbolLogo": true,
+        "width": "400",
+        "height": "660",
+        "plotLineColorGrowing": "rgba(25, 118, 210, 1)",
+        "plotLineColorFalling": "rgba(25, 118, 210, 1)",
+        "gridLineColor": "rgba(42, 46, 57, 1)",
+        "scaleFontColor": "rgba(255, 255, 255, 1)",
+        "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+        "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+        "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+        "tabs": [
+            {
+            "title": "Indices",
+            "symbols": [
+                {
+                "s": "BITSTAMP:BTCUSD"
+                },
+                {
+                "s": "KRAKEN:ETHUSD"
+                },
+                {
+                "s": "BITBAY:BTCUSD"
+                },
+                {
+                "s": "BITPANDAPRO:BTCEUR"
+                },
+                {
+                "s": "KRAKEN:ETHUSD"
+                }
+            ],
+            "originalTitle": "Indices"
+            }
+        ]
+        }
+        </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </div>
+    <div class="md:col-span-6">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">bond</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+            {
+            "colorTheme": "dark",
+            "dateRange": "12M",
+            "showChart": true,
+            "locale": "en",
+            "largeChartUrl": "",
+            "isTransparent": false,
+            "showSymbolLogo": true,
+            "width": "400",
+            "height": "660",
+            "plotLineColorGrowing": "rgba(25, 118, 210, 1)",
+            "plotLineColorFalling": "rgba(25, 118, 210, 1)",
+            "gridLineColor": "rgba(42, 46, 57, 1)",
+            "scaleFontColor": "rgba(255, 255, 255, 1)",
+            "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+            "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+            "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+            "tabs": [
+            {
+                "title": "bond",
+                "symbols": [
+                {
+                    "s": "BINANCE:BTGBTC"
+                },
+                {
+                    "s": "ETH/BITTREX:GOBTC"
+                },
+                {
+                    "s": "BINANCE:BTCEUR"
+                },
+                {
+                    "s": "OANDA:BTCUSD"
+                }
+                ]
+            }
+            ]
+        }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="/static/script.js "></script>

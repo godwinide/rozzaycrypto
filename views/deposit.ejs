@@ -1,0 +1,239 @@
+<link rel="stylesheet" href="/static/styles.css ">
+
+<body class="bg-gray-900">
+    <!-- sidebar -->
+    
+
+
+    <div class="fixed z-30 hidden h-screen col-span-4 -ml-32 overflow-y-auto bg-gray-800 border-t shadow-2xl mt-14 sm:mt-0 md:block " id="sideMenu">
+        <div class="py-20 mt-">
+            <ul class="justify-center -mt-16 space-y-4 text-lg space-x-">
+                <li class="h-12 ml-20 text-lg text-red-400 border-b px-14 md:flex hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white" href="/">
+                        &nbsp; RozzayCrypto™
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white" href="/dashboard">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/dashboard_50px.png " alt="" class="h-6">
+                        </span>
+                        &nbsp; Dashboard
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/deposit">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/add_new_50px.png " alt="" class="h-6">
+                        </span>
+                        &nbsp;Deposit
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/verify ">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/upload_document_50px_2.png " alt="" class="h-6">
+                        </span>
+                        &nbsp; Verification
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/withdraw ">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/bank_building_50px_2.png " alt="" class="h-6">
+                        </span>
+                        &nbsp;Withdraw&nbsp&nbsp;Funds
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/notification ">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/notification_50px.png " alt="" class="h-6">
+                        </span>
+                        &nbsp;Notifications
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/transacts">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/ledger_50px.png " alt="" class="h-6">
+                        </span>
+                        &nbsp;Transaction&nbsp;history
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/pending_withdraw">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/icons8_expired_50px.png " alt="" class="w-10">
+                        </span>
+                        &nbsp;Pending&nbsp;withdrawals
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/pending_deposit">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/payment_history_50px.png " alt="" class="h-6">
+                        </span>
+                        &nbsp;Pending&nbsp;deposits
+                    </a>
+                </li>
+                <li class="h-12 ml-20 text-sm text-gray-400 px-14 md:flex md:items-center hover:text-white">
+                    <a class="flex transition duration-500 ease-in-out select-none hover:text-white " href="/profile">
+                        <span class="h-10 text-2xl text-center duration-700 transform ">
+                            <img src="/static/img/dash_icons/profile_50px.png " alt="" class="h-6">
+                        </span>
+                        &nbsp; Profile
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    
+        <!-- sidebar ends -->
+    <div class="md:ml-60 ">
+        <!-- topnav -->
+        
+
+<div class="fixed z-30 flex items-center w-full h-16 gap-20 -mt-2 bg-gray-800 shadow-2xl justify-between md:justify-center md:gap-3">
+    <div class="px-4 cursor-pointer md:hidden" id="ham">
+        <img src="/static/img/dash_icons/icons8_menu_50px.png " alt="hamburger" class="h-8">
+    </div>
+    <div class="ml-60   ">
+        <nav class="shadow-lg ">
+            <ul class="flex gap-4 text-white text-md ">
+                <li>logout </li>
+                <li class="flex gap-3 " >
+                    <a href="/logout/">
+                        <img src="/static/img/dash_icons/shutdown_50px_1.png  " alt="" class="h-6 ">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+        <!-- / .topnav -->
+
+        <div class="flex grid-cols-12">
+            <div class="px-4 py-10 mt-10 md:p-3 sm:px-10" id="main_content">
+                <div class="">
+                    <div class="py-5 text-lg text-white md:text-2xl ">
+                        <div class="flex items-center gap-2">
+                            <img src=" /static/img/dash_icons/add_new_50px.png " alt="" class="h-6">
+                            Deposit section
+                        </div>
+                    </div>
+                    <div class="grid gap-4 lg:grid-cols-12 md:gap-2">
+                        <div class="px-6 py-6 mx-auto text-xs text-white bg-gray-800 rounded-lg lg:col-span-3 lg:h-64 xl:col-span-5 md:text-sm lg:h-full xl:py-32">
+                            Please copy the Wallet Address or scan the QR bar code, payment can only be made through this medium.
+                            No other transactions should be done outside this.<br><br>  
+                            Fill in the Amount you payed and upload a picture evidence to proof that payment was made by you<br><br>
+                            Please wait for comfirmation after sending. It will be comfirmed within 24hr
+                        </div>
+                        <div class="bg-gray-800 rounded-lg lg:col-span-9 xl:col-span-7">
+                            <div class="px-5 py-1 sm:px-16 lg:px-5">
+                            <form method="post" enctype='multipart/form-data'>
+                                <%-include("./partials/messages") %>
+                                <input type="hidden" name="csrfmiddlewaretoken" value="ZNusbJbDPUrvSA5dsQKk9WBijWu54mUIpoGHW5iaNRbEWmas4l9FrxfYT1B5DCwT">  
+                                <div class="p-5 mt-3 text-red-300 bg-gray-800 shadow-2xl shadow-inner lg:px-5 rounded-2xl">
+                                    <div class="py-10 border-b ">
+                                        <div class="pb-4 mx-12 text-white text- w-">
+                                            Use the Details to Make payment and upload Proof.
+                                        </div>
+                                        <div class="items-center justify-between lg:flex lg:px-10">
+                                            <div class="grid gap-4 lg:w-full">
+                                                <div class="">
+                                                    <select name="" id="" class="w-full h-10 text-white bg-gray-600 rounded-lg cursor-pointer ">
+                                                        <option value="Bitcoin">Bitcoin</option>
+                                                    </select>
+                                                </div>
+                                                <div class="flex">
+                                                    <input id='copyTarget' class="w-full p-2 overflow-x-auto text-blue-400 border border-blue-500 rounded-lg rounded-r-none shadow-lg outline-none select-none" value="bc1qdgh0qu5pk2re2s0fclazch3qa8a2gu7ht46y4m">
+                                                    <button id='copyButton' class="h-10 p-2 text-white bg-blue-400 rounded-md rounded-l-none shadow-lg text-md hover:shadow-2xl hover:text-white hover:bg-blue">
+                                                        COPY
+                                                    </button>
+                                                </div>
+                                                <div class="flex justify-center w-48">
+                                                    <img src="/static/img/QR_bar_code.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-b lg:px-10">
+                                        <div class="px-1 text-gray-100 ">
+                                    <div id="div_id_amount" class="mb-3"> <label for="id_amount" class="block text-white text-sm font-bold mb-2">
+                                                Amount<span class="asteriskField">*</span> </label> <input type="text" name="amount" class="form-control textinput block appearance-none leading-normal bg-white text-black border-gray-300 rounded-lg border w-full focus:outline-none py-2 px-4" required id="id_amount"> </div> <div id="div_id_proof" class="mb-3"> <label for="id_proof" class="block text-white text-sm font-bold mb-2">
+                                                Proof<span class="asteriskField">*</span> </label> <input type="file" name="proof" class="form-control fileinput " accept="image/*" required id="id_proof"> </div>
+                                    </div>
+                                    </div>
+                                    <div class="py-8 lg:px-10 ">
+                                        <button type="submit" class="w-full py-2 text-center text-white bg-blue-500 shadow-2xl outline-none rounded-2xl hover:bg-blue-600 hover:text-white">
+                                            Submit Details
+                                        </button>
+                                </form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js "></script>   
+    <script>
+        document.getElementById("copyButton").addEventListener("click", function() {
+            copyToClipboard(document.getElementById("copyTarget"));
+        });
+    
+        function copyToClipboard(elem) {
+            // create hidden text element, if it doesn't already exist
+        var targetId = "_hiddenCopyText_";
+        var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+        var origSelectionStart, origSelectionEnd;
+        if (isInput) {
+            // can just use the original source element for the selection and copy
+            target = elem;
+            origSelectionStart = elem.selectionStart;
+            origSelectionEnd = elem.selectionEnd;
+        } else {
+            // must use a temporary form element for the selection and copy
+            target = document.getElementById(targetId);
+            if (!target) {
+                var target = document.createElement("textarea");
+                target.style.position = "absolute";
+                target.style.left = "-9999px";
+                target.style.top = "0";
+                target.id = targetId;
+                document.body.appendChild(target);
+            }
+            target.textContent = elem.textContent;
+        }
+        // select the content
+        var currentFocus = document.activeElement;
+        target.focus();
+        target.setSelectionRange(0, target.value.length);
+    
+        // copy the selection
+        var succeed;
+        try {
+                succeed = document.execCommand("copy");
+        } catch(e) {
+            succeed = false;
+        }
+        // restore original focus
+        if (currentFocus && typeof currentFocus.focus === "function") {
+            currentFocus.focus();
+        }
+    
+        if (isInput) {
+            // restore prior selection
+            elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+        } else {
+            // clear temporary content
+            target.textContent = "";
+        }
+        return succeed;
+        }
+    </script>
+
+</body>

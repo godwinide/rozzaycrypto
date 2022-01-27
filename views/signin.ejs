@@ -1,0 +1,47 @@
+
+    <!-- Page info section -->
+        <section class="page-info-section">
+            <div class="container">
+                <h2>Login</h2>
+                <div class="site-beradcamb">
+                    <a href="/">Home</a>
+                    <span><i class="fa fa-angle-right"></i> Login</span>
+                </div>
+            </div>
+        </section>
+	<!-- Page info end -->
+
+<section class="text-center bg-white section section-md" id="pricing" style="margin" class="pb-20"><br>
+	<div class="container">
+		<div class="jumbotron " style="width:80%;margin-left:20px;box-shadow: 0 7px 10px 0px #000;margin-top:10px">
+      <img src="/static/img/icons/icons8_add_user_male_32px.png">
+      <div class="text-xl text-green-600">
+        Login to Dashboard
+      </div>
+      <form method='post'>
+            <%-include("./partials/messages") %>
+          <input type="hidden" name="csrfmiddlewaretoken" value="f8sUrEU0k1QRRn9WFbu3s7haAvkxYkzJ9uFFTP9iMum8k9Bxr5mIEAOJ4fiez4TA">
+          <div class="justify-center block">
+              <div class="form-group lg:px-24 px-0">
+                <div class="justify-center block lg:px-24 ">
+                  
+
+                <div id="div_id_username" class="mb-3"> <label for="id_username" class="block text-gray-700 text-sm font-bold mb-2">
+                            Username<span class="asteriskField">*</span> </label> 
+                            <input type="text" name="username" autofocus class="textinput block py-2 border rounded-lg border-gray-300 bg-white px-4 leading-normal focus:outline-none text-gray-700 appearance-none w-full" required id="id_username"> </div> <div id="div_id_password" class="mb-3"> <label for="id_password" class="block text-gray-700 text-sm font-bold mb-2">
+                            Password<span class="asteriskField">*</span> </label> 
+                            <input type="password" name="password" class="passwordinput block py-2 border rounded-lg border-gray-300 bg-white px-4 leading-normal focus:outline-none text-gray-700 appearance-none w-full" required id="id_password"> </div>
+
+                </div>
+              </div>
+              <div>
+                
+              </div>
+              <button type="submit" class="btn bg-green-400 shadow-2xl hover:bg-green-500 rounded-2xl w-full lg:w-3/6">Login now</button>
+              <h5>Don't have an account? <a href="/signup" class="text-primary">Sign up here</a></h5>
+          </div>
+      </form>
+		</div>
+	</div>
+</section>
+<br>
